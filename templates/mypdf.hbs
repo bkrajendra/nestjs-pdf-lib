@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handlebars Example</title>
+</head>
+<body>
+    <h1>{{title}}</h1>
+    
+    <ul>
+        {{#each items}}
+            <li>{{this}}</li>
+        {{/each}}
+    </ul>
+    
+    <p>{{#if showFooter}}This is the footer.{{/if}}</p>
+</body>
+</html>
