@@ -30,8 +30,17 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "nestjs-pdf-lib",
-  "author": "Rajendra Khope",
+  "name": "@bkrajendra/nestjs-pdf-lib",
+  "author": "Rajendra Khope <bkrajendra@gmail.com>, Anshul Khope <anshukhope@gmail.com>",
+  "description": "NestJS PDF Library to generate PDF with the help of handlebar template using HTML.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bkrajendra/nestjs-pdf-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bkrajendra/nestjs-pdf-lib/issues"
+  },
+  "homepage": "https://github.com/bkrajendra/nestjs-pdf-lib#readme",
   "module": "dist/nestjs-pdf-lib.esm.js",
   "size-limit": [
     {
