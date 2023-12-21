@@ -6,7 +6,7 @@ describe('blah', () => {
 
   test('works', async() => {
     const data = {
-      title: "Handlebars Example",
+      title: "NestJS PDF Library to generate PDF with the help of handlebar template using HTML.",
       items: ["Item 1", "Item 2", "Item 3"],
       showFooter: true
   };
@@ -24,7 +24,7 @@ describe('blah', () => {
         'Copyright 2024',
       landscape: false,
     };
-    const filePath = path.join(process.cwd(), 'templates', 'admission-form.hbs');
+    const filePath = path.join(process.cwd(), 'templates', 'mypdf.hbs');
     const buffer = await c.generatePDF(filePath, options, data);
     expect(typeof buffer).toEqual('object');
   });
