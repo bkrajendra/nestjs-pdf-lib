@@ -25,7 +25,7 @@ describe('blah', () => {
       landscape: false,
     };
     const filePath = path.join(process.cwd(), 'templates', 'mypdf.hbs');
-    const buffer = await c.generatePDF(filePath, options, data);
+    const buffer = await c.generatePDF(filePath, options, data, null, 'my.pdf');
     expect(typeof buffer).toEqual('object');
   });
 

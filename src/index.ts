@@ -8,7 +8,8 @@ export const generatePDF = async (
   filePath: string,
   options = {},
   data = {},
-  puppeteer_options?: any
+  puppeteer_options?: any,
+  outputPath?: string
 ) => {
   let launch_options = puppeteer_options || {
     headless: 'new',
@@ -72,7 +73,7 @@ export const generatePDF = async (
     await page.setContent(content);
 
     const buffer = await page.pdf({
-      path: 'admission.pdf',
+      path: outputPath,
       format: 'a4',
       printBackground: true,
       margin: {
